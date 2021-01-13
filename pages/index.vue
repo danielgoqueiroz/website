@@ -1,12 +1,5 @@
 <template>
-  <div class="container">
-    <header><Menu /></header>
-    <NuxtLink to="/home">Home</NuxtLink>
-    <NuxtLink to="/sobre">Sobre</NuxtLink>
-    <NuxtLink to="/contato">Contato</NuxtLink>
-    <Nuxt />
-    <footer>Footer</footer>
-  </div>
+  <div class="container"></div>
 </template>
 
 <script lang="ts">

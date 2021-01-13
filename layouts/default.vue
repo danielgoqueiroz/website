@@ -1,9 +1,17 @@
 <template>
   <div>
+    <Menu />
     <Nuxt />
   </div>
 </template>
-
+<script>
+import Menu from '~/components/Menu'
+export default {
+  components: {
+    Menu,
+  }
+}
+</script>
 <style>
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

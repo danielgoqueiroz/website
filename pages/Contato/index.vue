@@ -1,5 +1,8 @@
 <template>
-  <div>Home</div>
+  <div>
+    <h1>Contato</h1>
+    <p>Formulário de contato</p>
+  </div>
 </template>
 <script>
 export default {}
