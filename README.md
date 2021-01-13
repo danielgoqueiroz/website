@@ -18,6 +18,3 @@ $ npm run generate
 ```
 
 Mais detalhes sobre o nuxt em  [Nuxt.js docs](https://nuxtjs.org).
-
-Menu
-https://www.youtube.com/watch?v=vUcUdpBcmF8
