@@ -3,20 +3,24 @@
     <b-img :src="image.link" :alt="image.alt" fluid></b-img>
     <SobreCard />
     <InstagramPosts />
-    <h1>últimos trabalhos</h1>
-    <h1>contato</h1>
+    <Folio />
+    <ContatoForm />
   </div>
 </template>
 
 <script>
 import SobreCard from '~/components/SobreCard'
 import InstagramPosts from '~/components/InstagramPosts'
+import Folio from '~/components/Folio'
+import ContatoForm from '~/components/ContatoForm'
 
 export default {
   name: 'Sobre',
   components: {
     SobreCard,
     InstagramPosts,
+    Folio,
+    ContatoForm,
   },
   data() {
     return {
