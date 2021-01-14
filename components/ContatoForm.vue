@@ -1,20 +1,30 @@
 <template>
-  <b-container fluid>
-    <h1>Contato</h1>
+  <b-container fluid="sm">
     <b-form>
-      <b-form-group
-        id="input-group-1"
-        label="Endereço de e-mail:"
-        label-for="input-1"
-        description="Descrição"
-      >
+      <b-form-group default label="Envie um mensagem." label-for="input-1">
         <b-form-input
-          id="input-1"
+          v-model="form.nome"
+          default
+          type="text"
+          placeholder="Nome"
+          required
+        />
+        <b-form-input
+          id="input-email"
           v-model="form.email"
+          default
           type="email"
           placeholder="E-mail"
           required
-        ></b-form-input>
+        />
+        <b-form-textarea
+          id="textarea"
+          v-model="form.text"
+          default
+          placeholder="Me escreva algo :)"
+          rows="3"
+          max-rows="6"
+        />
       </b-form-group>
     </b-form>
   </b-container>
@@ -26,7 +36,9 @@ export default {
   data() {
     return {
       form: {
-        email: 'teste@email.com',
+        name: '',
+        email: '',
+        text: '',
       },
     }
   },

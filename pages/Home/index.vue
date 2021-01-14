@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <b-container>
     <b-img :src="image.link" :alt="image.alt" fluid></b-img>
     <SobreCard />
     <InstagramPosts />
     <Folio />
     <ContatoForm />
-  </div>
+  </b-container>
 </template>
 
 <script>
