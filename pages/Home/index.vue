@@ -1,6 +1,6 @@
 <template>
   <b-container>
-    <b-img :src="image.link" :alt="image.alt" fluid></b-img>
+    <PhotoSlide />
     <SobreCard />
     <InstagramPosts />
     <Folio />
@@ -13,6 +13,7 @@ import SobreCard from '~/components/SobreCard'
 import InstagramPosts from '~/components/InstagramPosts'
 import Folio from '~/components/Folio'
 import ContatoForm from '~/components/ContatoForm'
+import PhotoSlide from '~/components/PhotoSlide'
 
 export default {
   name: 'Sobre',
@@ -21,6 +22,7 @@ export default {
     InstagramPosts,
     Folio,
     ContatoForm,
+    PhotoSlide,
   },
   data() {
     return {

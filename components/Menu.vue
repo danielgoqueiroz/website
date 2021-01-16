@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-navbar>
+    <b-navbar sticky>
       <b-navbar-brand><Logo class="logo" /></b-navbar-brand>
       <b-navbar-nav class="ml-auto">
         <NuxtLink

@@ -1,15 +1,6 @@
 <template>
-  <b-container fluid="sm">
-    <b-row>
-      <b-col>
-        <h1>Contato</h1>
-      </b-col>
-    </b-row>
-    <b-row>
-      <b-col>
-        <ContatoForm />
-      </b-col>
-    </b-row>
+  <b-container fluid>
+    <ContatoForm />
   </b-container>
 </template>
 <script>

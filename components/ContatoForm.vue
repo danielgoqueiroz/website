@@ -1,32 +1,40 @@
 <template>
-  <b-container fluid="sm">
-    <b-form>
-      <b-form-group default label="Envie um mensagem." label-for="input-1">
-        <b-form-input
-          v-model="form.nome"
-          default
-          type="text"
-          placeholder="Nome"
-          required
-        />
-        <b-form-input
-          id="input-email"
-          v-model="form.email"
-          default
-          type="email"
-          placeholder="E-mail"
-          required
-        />
-        <b-form-textarea
-          id="textarea"
-          v-model="form.text"
-          default
-          placeholder="Me escreva algo :)"
-          rows="3"
-          max-rows="6"
-        />
-      </b-form-group>
-    </b-form>
+  <b-container fluid>
+    <b-img
+      src="~/assets/images/image.jpg"
+      alt=""
+      fluid
+      class="image-featured"
+    ></b-img>
+    <b-form-group
+      class="mx-auto"
+      label="Envie um mensagem."
+      label-for="input-1"
+    >
+      <b-form-input
+        v-model="form.nome"
+        class="my-2"
+        type="text"
+        placeholder="Nome"
+        required
+      />
+      <b-form-input
+        id="input-email"
+        v-model="form.email"
+        class="my-2"
+        type="email"
+        placeholder="E-mail"
+        required
+      />
+      <b-form-textarea
+        id="textarea"
+        v-model="form.text"
+        class="my-2"
+        placeholder="Me escreva algo :)"
+        rows="3"
+        max-rows="6"
+      />
+    </b-form-group>
   </b-container>
 </template>
 
@@ -46,4 +54,8 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+.image-featured {
+  width: 100%;
+}
+</style>

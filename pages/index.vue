@@ -1,5 +1,5 @@
 <template>
-  <div class="container"></div>
+  <div class="mx-auto"></div>
 </template>
 
 <script lang="ts">
