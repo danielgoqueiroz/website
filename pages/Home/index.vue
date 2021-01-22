@@ -1,10 +1,11 @@
 <template>
   <b-container>
     <PhotoSlide />
+    <!--
     <SobreCard />
     <InstagramPosts />
     <Folio />
-    <ContatoForm />
+     <ContatoForm /> -->
   </b-container>
 </template>
 
@@ -28,7 +29,7 @@ export default {
     return {
       image: {
         alt: 'Imagem',
-        link: require('~/assets/images/image.jpg'),
+        link: require('~/static/images/image.jpg'),
       },
     }
   },

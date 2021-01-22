@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
     <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -10,16 +10,22 @@
       img-width="1024"
       img-height="480"
       style="text-shadow: 1px 1px 2px #333"
+      label-indicators
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
     >
       <b-carousel-slide
-        caption="First slide"
-        text="Nulla vitae elit libero, a pharetra augue mollis interdum."
+        caption="Sobre"
+        text="Sou publicitário de primeira formação, fotógrafo e videomaker por destino e desenvolvedor por determinação e paixão. Atuei por oito anos em jornal impresso diário. Em 2020 me formei em Análise e Desenvolvimento de Sistemas, área na qual sou apaixonado e na qual tenho feitos projetos pessoais. Após entrar como estagiário na Dígito Tecnologia, iniciei como deve júnior em Java."
         img-src="https://picsum.photos/1024/480/?image=52"
-      />
-      <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=54">
-        <h1>Hello world!</h1>
+      >
+        <SobreCard></SobreCard>
+      </b-carousel-slide>
+      <b-carousel-slide :img-src="require('~/static/slides/home/git.jpg')">
+        <h1>Github <b-icon-github /></h1>
+        <b-button href="https://github.com/danielgoqueiroz" target="_blank"
+          >Abrir</b-button
+        >
       </b-carousel-slide>
       <b-carousel-slide img-src="https://picsum.photos/1024/480/?image=58" />
       <b-carousel-slide>
@@ -41,12 +47,16 @@
         </p>
       </b-carousel-slide>
     </b-carousel>
-  </div>
+  </b-container>
 </template>
 
 <script>
+import SobreCard from '@/components/SobreCard'
 export default {
   name: 'Folio',
+  components: {
+    SobreCard,
+  },
   data() {
     return {
       slide: 0,

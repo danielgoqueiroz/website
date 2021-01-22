@@ -14,12 +14,12 @@ export default {
   data() {
     return {
       images: [
-        { img: require('~/assets/images/image.jpg') },
-        { img: require('~/assets/images/image.jpg') },
-        { img: require('~/assets/images/image.jpg') },
-        { img: require('~/assets/images/image.jpg') },
-        { img: require('~/assets/images/image.jpg') },
-        { img: require('~/assets/images/image.jpg') },
+        { img: require('~/static/images/image.jpg') },
+        { img: require('~/static/images/image.jpg') },
+        { img: require('~/static/images/image.jpg') },
+        { img: require('~/static/images/image.jpg') },
+        { img: require('~/static/images/image.jpg') },
+        { img: require('~/static/images/image.jpg') },
       ],
     }
   },

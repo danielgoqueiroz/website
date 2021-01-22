@@ -1,7 +1,7 @@
 <template>
   <b-container fluid>
     <b-img
-      src="~/assets/images/image.jpg"
+      src="~/static/images/image.jpg"
       alt=""
       fluid
       class="image-featured"

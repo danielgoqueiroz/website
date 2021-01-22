@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <b-container>
     <b-navbar sticky>
       <b-navbar-brand><Logo class="logo" /></b-navbar-brand>
       <b-navbar-nav class="ml-auto">
@@ -12,7 +12,7 @@
         </NuxtLink>
       </b-navbar-nav>
     </b-navbar>
-  </div>
+  </b-container>
 </template>
 
 <script>
@@ -76,6 +76,6 @@ nav .menu-item {
 nav .menu-item.active,
 nav .menu-item:hover {
   background-color: rgb(44, 44, 44);
-  border-bottom-color: rgb(255, 225, 0);
+  border-bottom-color: #57bd84;
 }
 </style>
