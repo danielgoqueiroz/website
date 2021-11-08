@@ -1,15 +1,19 @@
 <template>
   <b-container>
-    <b-navbar sticky>
-      <b-navbar-brand><Logo class="logo" /></b-navbar-brand>
+    <b-navbar>
+      <b-navbar-brand href="#">
+        <Logo class="logo" />
+      </b-navbar-brand>
       <b-navbar-nav class="ml-auto">
-        <NuxtLink
-          v-for="item in menu"
-          :key="item.title"
-          class="menu-item"
-          :to="item.link"
-          >{{ item.title }}
-        </NuxtLink>
+        <b-nav-form>
+          <NuxtLink
+            v-for="item in menu"
+            :key="item.title"
+            class="menu-item"
+            :to="item.link"
+            >{{ item.title }}
+          </NuxtLink>
+        </b-nav-form>
       </b-navbar-nav>
     </b-navbar>
   </b-container>
@@ -57,7 +61,7 @@ nav .logo {
   transition: 0.3s;
 }
 nav {
-  display: flex;
+  display: inline;
   align-items: center;
   justify-content: center;
   background-color: rgb(49, 49, 49);
