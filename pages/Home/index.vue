@@ -1,6 +1,6 @@
 <template>
   <b-container>
-    <PhotoSlide />
+    <!-- <PhotoSlide /> -->
     <!--
     <SobreCard />
     <InstagramPosts />
@@ -10,20 +10,20 @@
 </template>
 
 <script>
-import SobreCard from '~/components/SobreCard'
-import InstagramPosts from '~/components/InstagramPosts'
-import Folio from '~/components/Folio'
-import ContatoForm from '~/components/ContatoForm'
-import PhotoSlide from '~/components/PhotoSlide'
+// import SobreCard from '~/components/SobreCard'
+// import InstagramPosts from '~/components/InstagramPosts'
+// import Folio from '~/components/Folio'
+// import ContatoForm from '~/components/ContatoForm'
+// import PhotoSlide from '~/components/PhotoSlide'
 
 export default {
   name: 'Sobre',
   components: {
-    SobreCard,
-    InstagramPosts,
-    Folio,
-    ContatoForm,
-    PhotoSlide,
+    // SobreCard,
+    // InstagramPosts,
+    // Folio,
+    // ContatoForm,
+    // PhotoSlide,
   },
   data() {
     return {

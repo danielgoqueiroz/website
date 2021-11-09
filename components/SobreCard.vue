@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: 'PhotoSlide',
+  name: 'SobreCard',
   data() {
     return {
       works: [

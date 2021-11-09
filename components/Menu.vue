@@ -1,9 +1,12 @@
 <template>
-  <b-container>
+  <div>
     <b-navbar>
-      <b-navbar-brand href="#">
+      <b-icon-house-door-fill class="h3" style="margin-right: 16px" />
+      <!-- <b-navbar-brand href="#">
         <Logo class="logo" />
-      </b-navbar-brand>
+      </b-navbar-brand> -->
+      <b-icon-telephone-fill style="margin-right: 8px" />
+      (48) 9 9937-0534 @ contato@danielgoqueiroz.com
       <b-navbar-nav class="ml-auto">
         <b-nav-form>
           <NuxtLink
@@ -16,15 +19,15 @@
         </b-nav-form>
       </b-navbar-nav>
     </b-navbar>
-  </b-container>
+  </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo'
+// import Logo from '~/components/Logo'
 export default {
   name: 'Menu',
   components: {
-    Logo,
+    // Logo,
   },
   data() {
     return {
@@ -61,7 +64,9 @@ nav .logo {
   transition: 0.3s;
 }
 nav {
-  display: inline;
+  display: flex;
+  width: 100%;
+  color: aliceblue;
   align-items: center;
   justify-content: center;
   background-color: rgb(49, 49, 49);

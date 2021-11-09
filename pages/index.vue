@@ -10,20 +10,20 @@ export default Vue.extend({})
 
 <style>
 body {
-  font-family: 'montserrat', sans-serif;
+  /* font-family: 'montserrat', sans-serif; */
 }
 
 .container {
-  margin: 0;
+  /* margin: 0;
   padding: 0;
   min-height: 100%;
   align-content: center;
-  box-sizing: border-box;
+  box-sizing: border-box; */
 }
 
 header {
-  width: 100vw;
-  background-color: #222;
-  padding: 15px;
+  /* width: 100vw; */
+  /* background-color: #222; */
+  /* padding: 15px; */
 }
 </style>
